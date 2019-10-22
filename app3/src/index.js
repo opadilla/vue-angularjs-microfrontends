@@ -7,7 +7,7 @@ if ( ON_TEST ) {
     require('angular-mocks/angular-mocks');
 }
 
-const ngModule = angular.module('app', []);
+const ngModule = angular.module('angularJS-app', []);
 
 registerDirectives(ngModule);
 // require('./directives').default(ngModule);
