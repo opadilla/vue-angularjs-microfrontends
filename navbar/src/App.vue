@@ -1,9 +1,9 @@
 <template>
   <div id="navbar-app">
     <div id="nav">
-      <router-link to="/app1">App1</router-link> |
-      <router-link to="/app2">App2</router-link> |
-      <router-link to="/app3">App3</router-link>
+      <!-- <router-link to="/app1">App1</router-link> | -->
+      <router-link to="/app2">vue</router-link> |
+      <router-link to="/app3">ng1</router-link>
     </div>
     <router-view/>
   </div>
@@ -16,6 +16,8 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  position: absolute;
+  top: 0;
 }
 #nav {
   padding: 30px;
