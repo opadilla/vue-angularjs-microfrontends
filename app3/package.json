@@ -44,6 +44,9 @@
     "webpack-dev-server": "^3.1.5"
   },
   "dependencies": {
-    "angular": "^1.7.3"
+    "angular": "^1.7.3",
+    "angular-ui-router": "^1.0.23",
+    "single-spa-angularjs": "^3.1.0",
+    "systemjs-webpack-interop": "^1.1.0"
   }
 }

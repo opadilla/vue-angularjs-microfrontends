@@ -1,11 +1,21 @@
-const HtmlWebPackPlugin = require('html-webpack-plugin');
+// const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const webpack = require('webpack');
 
 module.exports = {    
+    entry: "./src/angularJS.app.js",
+    output: {
+      filename: 'angularJS.app.js',
+      library: 'angularJS',
+      libraryTarget: 'amd',
+      // path: path.resolve(__dirname, 'build/angularJS'),
+    },
     devtool: 'source-map', // for debug purposes on production
     devServer: {
-      port: 8083
+      port: 8083,
+        headers: {
+        "Access-Control-Allow-Origin": "*",
+      },
     },
     module: {
         rules: [
@@ -53,10 +63,10 @@ module.exports = {
         ]
     },
     plugins: [
-        new HtmlWebPackPlugin({
-            template: 'src/index.html',
-            filename: './index.html'
-        }),
+        // new HtmlWebPackPlugin({
+        //     template: 'src/index.html',
+        //     filename: './index.html'
+        // }),
         new MiniCssExtractPlugin({
             filename: '[name].css',
             chunkFilename: '[id].css'
